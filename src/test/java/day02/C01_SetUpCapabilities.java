@@ -31,7 +31,8 @@ public class C01_SetUpCapabilities {
         capabilities.setCapability("automationName","UiAutomator2");
         //Download an application from the apkPure
         //create a directory with name app under the project name then drag and drop the downloaded app.
-        capabilities.setCapability("app","");
+        capabilities.setCapability("app",System.getProperty("user.dir")+"app/Calculator.apk");
+        //set-up driver and define implement the url
 
     }
 
